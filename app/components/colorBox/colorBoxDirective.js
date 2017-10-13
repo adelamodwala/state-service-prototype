@@ -34,12 +34,11 @@ export default class ControllerBox {
     }
 
     render() {
-        let tmp = view({
+        this.elem.html(view({
             id: this.id,
             title: this.title,
             color: this.color,
             onClick: this.controller.changeColor
-        });
-        this.elem.html(tmp);
+        }));
     }
 }
