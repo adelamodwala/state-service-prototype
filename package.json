@@ -1,0 +1,15 @@
+{
+  "name": "state-service-prototype",
+  "version": "1.0.0",
+  "description": "A prototype for the state in a flux cycle",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adelamodwala/state-service-prototype.git"
+  },
+  "author": "Adel Amodwala",
+  "license": "ISC"
+}
