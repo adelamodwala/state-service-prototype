@@ -4,12 +4,25 @@
   "description": "A prototype for the state in a flux cycle",
   "main": "index.js",
   "scripts": {
-
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "webpack-dev-server",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/adelamodwala/state-service-prototype.git"
   },
   "author": "Adel Amodwala",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.7.1"
+  }
 }
