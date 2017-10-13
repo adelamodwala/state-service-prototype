@@ -1,11 +1,23 @@
-import handlebars from 'handlebars';
-import $ from 'jquery';
+import ColorService from './services/colorService';
+import ColorStateService from './services/colorStateService';
+import ColorBox from './components/colorBox/colorBoxDirective';
 
-let source = $("#template1").html();
-let template = handlebars.compile(source);
-let data = {
-    title: "Hello World!",
-    message: "How ya doin'?"
-};
+console.log('hello');
+window.services = {};
 
-$("#template1-view").html(template(data));
+// main
+function main() {
+
+    // services
+    let colorStateService = new ColorStateService();
+    let colorService = new ColorService(colorStateService);
+    window.services = {
+        colorStateService,
+        colorService
+    };
+
+    let box1 = new ColorBox("color-box1");
+    let box2 = new ColorBox("color-box2");
+}
+
+main();

@@ -6,12 +6,16 @@
 </head>
 <body>
 
-<script id="template1"  type="text/x-handlebars-template">
-    <h1>{{title}}</h1>
-    <div>{{message}}</div>
-</script>
-
-<div id="template1-view"></div>
+<div id="app">
+    <div id="color-box1"
+         data-component="ColorBox"
+         data-title="must you?"
+         data-color="gold"></div>
+    <div id="color-box2"
+         data-component="ColorBox"
+         data-title="yes sir..."
+         data-color="purple"></div>
+</div>
 
 
 <script src="assets/bundle.js"></script>
